@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr>
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#historia">História da Web</a>
+            <ul>
+                <li><a href="#computador">Primeiros Computadores</a></li>
+                <li><a href="#internet">Surgimento da Internet</a></li>
+            </ul>
+        </li>
+        <li><a href="#cliente">O que são <i>Clients?</i></a></li>
+        <li><a href="#servidor">O que são <i>Servers?</i></a></li>
+        <li><a href="#html-pratica">HTML na prática!</a>
+            <ul>
+                <li><a href="#estrutura-basica">Estrutura básica</a></li>
+                <li><a href="#tags">Tags</a></li>
+                <li><a href="#atributos">Atributos das tags</a></li>
+                <li><a href="#listas">Listas</a></li>
+            </ul>
+        </li>
+        <li><a href="#referencia">Referências</a></li>
+    </ul>
+    <h2 id="historia">História da Web</h2>
+    <p><h3 id="computador">Primeiros Computadores:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Apesar de exitir a teoria bem antes da epóca, foi em <strong>1944</strong> que surgiu oque pode-se dizer ser o primeiro computador, <u><strong>Harvard Mark I</strong></u>. Após ele surgiur o <u><strong>Colossus</strong></u> em <strong>1946</strong> e o <u><strong>ENIAC</strong></u> na mesma época, terminando a primeira geração de computadores. </p>
+    <p>Na segunda geração (<strong>1959 - 1965</strong>), ocorreu a evolução das válvulas para os transistores, permitindo a diminuição drásticas dos computadores.</p>
+    <p>Na terceira geração (<strong>1965 - 1970</strong>), surgiu os circuitos integrados (Ships) que diminuiu ainda mais os computadores.</p>
+    <p>A quarta geração (<strong>1971..</strong>), que vai até os dias de hoje, é marcada pelos <mark><i><u>personal computers</u></i></mark> (Computadores pessoais), ao qual os computadores se tornaram mais acessíveis para o público em geral.</p>
+    <blockquote> <small>A quinta geração ainda é discutida e não se chegou a uma resposta se já estamos nela ou ainda virá.</small></blockquote>
+    
+    <p><h3 id="internet">Surgimento da Internet:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Um dos primeiros sistemas de comunicação foi o telégrafo, por volta de <strong>1958</strong>, ao qual se utilizava código morse.</p>
+    <p>Voltando a <strong>1950</strong>, durante a época da guerra fria, houve um tremendo avanço na tecnologia e a criação da <u><strong>ARPA</strong></u>, que mais tarde seria conhecida como <u><strong>DARPA</strong></u>. Na época, apartir de uma teoria de uma rede galática de comunicação criada por <u>Joseph C. R. Licklider</u>, a <u><strong>DARPA</strong></u> começou a fazer pesquisas voltadas a esse assunto.</p>
+    <p>Após muito tempo de evolução, surgiu a Arpanet com avanços no sistema de comunicação em pacotes, ao qual era possível enviar para multiplos destinos. Também foram criados os <i>checkpoints</i> ou roteadores, onde a informação teria que passar até chegar no seu destino.</p>
+    <p>A primeira conexão estabelecida foi feita em <u>29/10/1969</u>, ao qual se conectou a <i>University of California</i> ou UCLA e o <i>Stanford Research Institute</i> ou SRI. A primeira palavra enviada foi "<i>LOGIN</i>", mas apenas chegou "<i>LO</i>". </p>
+    <p>Com a evolução da Arpanet, houve a criação do <u><strong>TCP/IP</strong></u> e o desenvolvimentos de diversas outras redes, até que ocorreu a criação do <u>WWW</u> (<i>World Wide Web</i>) em <strong>1989</strong> por <u>Tim Berners-Lee.</u></p>
+
+    <h2 id="cliente">O que são <i>Clients</i>?</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p><i>Clients</i> são os dispositivos que estão consumindo informações da internet. Eles se comunicacão, através da internet, com outros computadores. </p>
+    <p>Os navegadores, para que não precisem estar sempre buscando informações dos <i>Servidores</i>, criam algo chamado <i>Cache</i>, que armazena os arquivos enviados para que o <i>Client</i> não precise pegar os arquivos a todo momento.</p>
+    <p>Uma das maiores preocupações, quanto a programação, voltada ao <i>Client</i> são os diversos dispositivos diferentes que estão conectados. Além disso, os navegadores também precisam ser compátiveis, já que cada um deles possui suas diferenças.</p>
+    <p>Após comentar sobre os navegadores, é necessário explicar as <strong>Aplicações WEB</strong>, que são soluções criadas que possuem a internet como meio de comunicação entre <i>Client x Servidor</i> não sendo necessário a sua instalação.</p>
+    <p>Portanto, quando você usa as redes socias no navegador, elas são consideradas aplicações web, enquanto no celular, onde é necessário o download do aplicativo, não são.</p>
+
+    <h2 id="servidor">O que são <i>Servers</i>?</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p><i>Servers</i> ou Servidores, são computadores robustos que se comunica com vários dispositivos e possui funções diferentes, dependendo do servidor. Os principais servidores são de arquivos, segurança, streaming, e-mail ou web.</p>
+    <p>Quando se fala de servidor para internet, que dizer que o dispositivo precisa estar conectado a internet para poder acessa-lo, mas também existem os servidores locais, ao qual não é necessário conexão com a internet.</p>
+
+    <h2 id="html-pratica">HTML na prática!</h2>
+    <p><h3 id="estrutura-basica">Estrutura básica:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Páginas HTML consistem de três tags principais, ao qual formam sua estrutura básica:
+        <ul>
+            <li><strong><u>< html ></strong></u> : Serve para dizer ao navegador que, tudo dentro dele, deve ser lido como HTML</li>
+            <li><strong><u>< head ></strong></u> : Tudo aquilo que vai carregar antes de exibir para o usuário.</li>
+            <li><strong><u>< body ></strong></u> : Tudo aquilo que aparece para o usuário.</li>
+        </ul>
+    </p>
+    
+    <p><h3 id="tags">Tags:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Existem diversas tags e cada uma delas possui suas próprias funções. As tags são estruturas que possuem instruções ao qual os navegadores interpretam e renderizam na página.</p>
+
+    <p><h3 id="atributos">Atributos das tags:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Os atributos são propriedades que as tags podem ter, ao qual fazem com que ela se comporte da forma esperada.</p>
+    <p>Existem atributos globais, ao qual funcionam com todas as tags, e os específicos, que são direcionados a determinadas tags.</p>
+
+    <p><h3 id="listas">Listas:</h3></p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <p>Existem dois tipos de listas, as ordenadas e não ordenadas:
+        <ol>
+            <li>Listas ordenadas:</li>
+            <li>Possuem uma numeração ao qual as ordenam.</li>
+        </ol>
+        <ul>
+            <li>Listas não-ordenadas:</li>
+            <li>Possuem apenas uma marcação de indicação, mas não é ordenado.</li>
+        </ul>
+    </p>
+
+    <h2 id="referencia">Links de referências</h2>
+    <small><a href="#inicio">(voltar)</a></small>
+    <ul>
+        <li><a href="https://www.dio.me" target="_blank">DIO.me</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W<sup>3</sup> School</a></li>
+    </ul>
+</body>
+</html>
